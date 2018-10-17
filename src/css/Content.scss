@@ -1,0 +1,24 @@
+@import "./_variables";
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: $background-color;
+  padding: 60px;
+}
+
+.content__carousel{
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+
+}
+
+.content__carousel__description{
+  position: relative;
+}
+
+.content__carousel__description p{
+  position: absolute;
+  bottom: 0;
+  font-size: $content__description-size;
+}
