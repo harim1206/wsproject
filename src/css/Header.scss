@@ -1,9 +1,16 @@
 .header {
+  display: grid;
+  grid-template-columns: 5fr 4fr 1fr 1fr 1fr;
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 0px 60px;
+  width: 100vw;
+  padding: 0px 60px 0px 60px;
+  margin-top: 40px;
+  z-index: 50;
 }
+// .container {
+//   grid-template-columns: 1fr 1fr 1fr;
+// }
 
 
 .header__button{

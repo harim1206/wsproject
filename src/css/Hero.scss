@@ -1,8 +1,14 @@
 .hero{
-  background-image: url("../assets/01_1280(16x9Hero).jpg");
-  background-size: cover;
-  background-position: center;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
 
+}
 
+.hero__image{
+  position: absolute;
+}
+
+.hero__content{
+  position: absolute;
+  top: 200px;
+  padding: 0px 60px 0px 60px;
 }

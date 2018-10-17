@@ -1,13 +1,26 @@
-$font: 'AkzidenzGrotesk', sans-serif;
+$font: 'Akzidenz Grotesk', sans-serif;
 
 @font-face {
-    font-family: "AkzidenzGrotesk";
+    font-family: "Akzidenz Grotesk";
     src: url("./fonts/AkzidenzGrotesk-Extended.otf");
+}
+
+@font-face {
+    font-family: "Akzidenz Grotesk Medium";
+    src: url("./fonts/AkzidenzGrotesk-MediumExtended.otf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .App{
   font-family: $font;
-  text-align: center;
+  // text-align: center;
 }
 
 /* .App {
