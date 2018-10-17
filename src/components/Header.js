@@ -10,7 +10,7 @@ class Hero extends Component{
   render() {
     return (
       <div className="header">
-        <div className = "header__button">josh</div>
+        <div className = "header__logo">josh</div>
         <div className = "header__button">shop all</div>
         <div className = "header__button">about</div>
         <div className = "header__button">account</div>

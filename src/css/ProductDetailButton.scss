@@ -1,0 +1,18 @@
+@import "./_variables";
+
+.product-detail-button{
+  display: inline-block;
+  border: none;
+  padding: 22px 50px;
+  margin: 0;
+  text-decoration: none;
+  background: $button-background;
+  color: $button-color;
+  font-size: $button-size;
+  cursor: pointer;
+}
+
+.product-detail-button:hover,
+.product-detail-button:focus {
+    background: $button-background-hover;
+}

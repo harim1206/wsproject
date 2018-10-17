@@ -1,3 +1,5 @@
+@import "./_variables";
+
 .header {
   display: grid;
   grid-template-columns: 5fr 4fr 1fr 1fr 1fr;
@@ -12,8 +14,14 @@
 //   grid-template-columns: 1fr 1fr 1fr;
 // }
 
+.header__logo{
+  font-size: $logo-size;
+  color: $nav-color;
+}
 
 .header__button{
   display: inline-block;
-  color: white;
+  font-size: $nav__button-size;
+  color: $nav-color;
+  line-height: 24px;
 }
