@@ -5,6 +5,7 @@ import './App.scss';
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Content from './components/Content'
+import Video from './components/Video'
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Header/>
         <Hero/>
         <Content/>
+        <Video/>
 
       </div>
     );
