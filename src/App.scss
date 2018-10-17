@@ -1,10 +1,12 @@
+$font: 'AkzidenzGrotesk', sans-serif;
+
 @font-face {
     font-family: "AkzidenzGrotesk";
     src: url("./fonts/AkzidenzGrotesk-Extended.otf");
 }
 
 .App{
-  font-family: 'AkzidenzGrotesk', sans-serif;
+  font-family: $font;
   text-align: center;
 }
 

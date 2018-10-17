@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/Hero.css'
+import '../css/Hero.scss'
 
 
 class Hero extends Component{
