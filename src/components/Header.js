@@ -10,7 +10,6 @@ class Header extends Component{
       fadeNav: false,
       hideNav: false
     }
-
     this.onScroll = this.onScroll.bind(this);
   }
 
@@ -22,23 +21,23 @@ class Header extends Component{
     console.log('window.pageYOffset: ', window.pageYOffset)
 
     // if y position passes hero, hide navigation
-    window.pageYOffset>635 ? this.setState({hideNav:true}, ()=>console.log(this.state)) : this.setState({hideNav:false}, ()=>console.log(this.state))
-
-
+    window.pageYOffset>635 ? this.setState({hideNav:true}) : this.setState({hideNav:false})
     window.pageYOffset>0 ? this.setState({fadeNav: true}) : this.setState({fadeNav: false})
 
   }
 
   render() {
     let divStyle = {
-      backgroundColor: this.state.fadeNav ? "rgba(226, 216, 206, 0.8)":"transparent",
-      display: this.state.hideNav ? "none":"grid"
+      backgroundColor: this.state.fadeNav ? "rgba(226, 216, 206, 0.8)":"transparent"
+      // display: this.state.hideNav ? "none":"grid"
     };
+
+    let headerClass = this.state.hideNav ? "header header-disappear":"header"
 
 
 
     return (
-      <div className="header" style={divStyle}>
+      <div className={headerClass} style={divStyle}>
         <div className = "header__logo header--desktop">josh</div>
         <div className = "header__button header--desktop">shop all</div>
         <div className = "header__button header--desktop">about</div>
