@@ -6,8 +6,8 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  padding: 0px 60px 0px 60px;
-  margin-top: 40px;
+  padding: 30px 60px 30px 60px;
+  // padding-top: 40px;
   z-index: 50;
 
   .header--desktop{
@@ -31,6 +31,7 @@
 
   }
 }
+
 
 .header__logo{
   font-size: $logo-size;

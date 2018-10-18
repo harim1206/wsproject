@@ -27,7 +27,6 @@ export default App;
 
 
 
-
 // <div className="App">
 // <Hero/>
 // <header className="App-header">
