@@ -3,8 +3,6 @@
 .hero{
   position: relative;
   height: 720px;
-
-
 }
 
 .hero__image{
@@ -20,7 +18,7 @@
     img{
       width: 100%;
       min-height: 720px;
-      
+
       @media (min-width: #{$hero-desktop-min-width}){
         width: auto;
       }
@@ -32,4 +30,15 @@
   position: absolute;
   top: 200px;
   height: 580px;
+}
+
+.hero__arrow{
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  cursor: pointer;
+
+  i{
+    color: white;
+  }
 }

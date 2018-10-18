@@ -27,11 +27,7 @@ class Header extends Component{
   }
 
   render() {
-    let divStyle = {
-      backgroundColor: this.state.fadeNav ? "rgba(226, 216, 206, 0.8)":"transparent"
-      // display: this.state.hideNav ? "none":"grid"
-    };
-
+    let divStyle = {backgroundColor: this.state.fadeNav ? "rgba(226, 216, 206, 0.8)":"transparent"};
     let headerClass = this.state.hideNav ? "header header-disappear":"header"
 
 

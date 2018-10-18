@@ -6,14 +6,25 @@ import ProductDetail from './ProductDetail'
 import desktopHeroImg from '../assets/01_1280(16x9Hero).jpg'
 import mobileHeroImg from '../assets/Mobile_16x9-Hero.jpg'
 
-
-// import logo from './logo.png'; // Tell Webpack this JS file uses this image
-
+// for smooth scrollTo animation
+import easyScroll from 'easy-scroll';
 
 class Hero extends Component{
 
   constructor() {
     super();
+  }
+
+  onArrowClick = (event) =>{
+    let scrollAmount = 770 - window.pageYOffset
+
+    easyScroll({
+      'scrollableDomEle': window,
+      'direction': 'bottom',
+      'duration': 500,
+      'easingPreset': 'easeInQuad',
+      'scrollAmount': scrollAmount
+    });
   }
 
   render() {
@@ -26,8 +37,13 @@ class Hero extends Component{
             <img src={desktopHeroImg} alt="Desktop 1280px 16x9 Hero"/>
           </picture>
         </div>
+
         <div className="hero__content">
           <ProductDetail/>
+        </div>
+
+        <div className="hero__arrow" onClick={this.onArrowClick}>
+          <i class="fas fa-angle-down fa-3x"></i>
         </div>
 
       </div>
@@ -35,10 +51,5 @@ class Hero extends Component{
   }
 
 }
-
-// <button className="atc-button atc-button--mobile">
-// add ( 1 pair ) to bag
-// </button>
-
 
 export default Hero
