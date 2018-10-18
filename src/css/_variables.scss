@@ -1,9 +1,29 @@
+$font: 'AkzidenzGrotesk', sans-serif;
+$font-medium: 'AkzidenzGroteskMedium', sans-serif;
+
+@font-face {
+    font-family: "AkzidenzGrotesk";
+    src: url("../fonts/AkzidenzGrotesk-Extended.otf");
+}
+
+
+@font-face {
+    font-family: "AkzidenzGroteskMedium";
+    src: url("../fonts/AkzidenzGrotesk-MediumExtended.otf");
+}
+
 $background-color: #E2D8CE;
 
-//Header
+//Media Queries
+$desktop-min-width: 768px;
+$hero-desktop-min-width: 500px;
+
+//Header + Footer
 $logo-size: 20px;
 $nav__button-size: 14px;
 $nav-color: #ffffff;
+$footer__button-size: 12px;
+$footer-color: #000000;
 
 //ProductDetail
 $title-size: 28px;

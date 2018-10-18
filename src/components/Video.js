@@ -13,8 +13,10 @@ class Video extends Component{
     return (
       <div className="video">
         <ReactPlayer
+          className="react-player"
           url='https://www.youtube.com/watch?v=hRbD43uC_L8'
           width='100%'
+          height='100%'
         />
       </div>
     );

@@ -1,0 +1,36 @@
+@import "./variables";
+
+.footer {
+  width: 100vw;
+  padding-bottom: 30px;
+
+  background-color: $background-color;
+  font-family: $font-medium;
+
+  @media (min-width: #{$desktop-min-width}){
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    padding: 60px;
+  }
+
+}
+
+.footer__button{
+  font-size: $footer__button-size;
+  color: $footer-color;
+  padding: 30px 0px 0px 20px;
+
+  @media (min-width: #{$desktop-min-width}){
+    display: inline-block;
+    padding: 0px;
+  }
+}
+
+.footer--right{
+  @media (min-width: #{$desktop-min-width}){
+    text-align: right;
+    .footer__button{
+      margin-left: 50px;
+    }
+  }
+}

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.scss';
+import './css/App.scss';
 
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Content from './components/Content'
 import Video from './components/Video'
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Hero/>
         <Content/>
         <Video/>
+        <Footer/>
 
       </div>
     );

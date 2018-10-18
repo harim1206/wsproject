@@ -1,12 +1,27 @@
 @import "./_variables";
 
 .product-detail{
-  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.product-detail__container{
+  width: 100%;
   color: white;
+  padding: 0px 30px;
+
+  @media (min-width: #{$desktop-min-width}){
+    width: 50%;
+    margin-left: 60px;
+    padding: 0px;
+
+
+  }
 
 }
 
 .product-detail__title{
+  font-family: $font-medium;
   font-size: $title-size;
 }
 
@@ -15,6 +30,11 @@
 }
 
 .product-detail__description{
+  font-family: $font-medium;
   font-size: $description-size;
   line-height: $line-height;
+
+  @media (min-width: #{$desktop-min-width}){
+    font-family: $font;
+  }
 }

@@ -1,14 +1,35 @@
+@import "./_variables";
+
 .hero{
   position: relative;
   height: 720px;
+
+
 }
 
 .hero__image{
-  position: absolute;
+  // anchor image top left of hero component
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 720px;
+
+  picture{
+    position: absolute;
+
+    img{
+      width: 100%;
+      min-height: 720px;
+      
+      @media (min-width: #{$hero-desktop-min-width}){
+        width: auto;
+      }
+    }
+  }
 }
 
 .hero__content{
   position: absolute;
   top: 200px;
-  padding: 0px 60px 0px 60px;
+  height: 580px;
 }

@@ -1,14 +1,4 @@
-$font: 'Akzidenz Grotesk', sans-serif;
-
-@font-face {
-    font-family: "Akzidenz Grotesk";
-    src: url("./fonts/AkzidenzGrotesk-Extended.otf");
-}
-
-@font-face {
-    font-family: "Akzidenz Grotesk Medium";
-    src: url("./fonts/AkzidenzGrotesk-MediumExtended.otf");
-}
+@import "./_variables";
 
 html {
   box-sizing: border-box;
@@ -20,7 +10,6 @@ html {
 
 .App{
   font-family: $font;
-  // text-align: center;
 }
 
 /* .App {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Hero.scss'
+import '../css/ProductDetail.scss'
 
 import ProductDetail from './ProductDetail'
 import desktopHeroImg from '../assets/01_1280(16x9Hero).jpg'
@@ -18,11 +19,13 @@ class Hero extends Component{
   render() {
     return (
       <div className="hero">
-        <picture className="hero__image">
-          <source media="(max-width: 766px)" srcSet={mobileHeroImg}/>
-          <source media="(min-width: 767px)" srcSet={desktopHeroImg}/>
-          <img src={desktopHeroImg} alt="Desktop 1280px 16x9 Hero"/>
-        </picture>
+        <div className="hero__image">
+          <picture className="hero__image">
+            <source media="(max-width: 500px)" srcSet={mobileHeroImg}/>
+            <source media="(min-width: 501px)" srcSet={desktopHeroImg}/>
+            <img src={desktopHeroImg} alt="Desktop 1280px 16x9 Hero"/>
+          </picture>
+        </div>
         <div className="hero__content">
           <ProductDetail/>
         </div>
@@ -32,8 +35,10 @@ class Hero extends Component{
   }
 
 }
-// <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
-// <source media="(min-width: 800px)" srcset="elva-800w.jpg">
-// <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+
+// <button className="atc-button atc-button--mobile">
+// add ( 1 pair ) to bag
+// </button>
+
 
 export default Hero

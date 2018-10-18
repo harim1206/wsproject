@@ -5,15 +5,15 @@ const ProductDetailCheckbox = () => (
  <div className="product-detail-checkbox">
   <input type="checkbox" id="white"
          name="color" value="white" />
-  <label for="white">White</label>
+  <label htmlFor="white">White</label>
 
   <input type="checkbox" id="yellow"
          name="color" value="yellow" />
-  <label for="yellow">Yellow</label>
+  <label htmlFor="yellow">Yellow</label>
 
   <input type="checkbox" id="gold"
          name="color" value="gold" />
-  <label for="gold">Gold</label>
+  <label htmlFor="gold">Gold</label>
  </div>
 );
 
