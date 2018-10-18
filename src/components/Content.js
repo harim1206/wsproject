@@ -4,7 +4,6 @@ import '../css/Content.scss'
 import contentStaticImage from '../assets/03_1280(4x3Large).jpg'
 import contentCarouselImage from '../assets/02_1280(3x4Small).jpg'
 
-import CarouselImage from './CarouselImage'
 
 class Content extends Component{
 
@@ -13,8 +12,6 @@ class Content extends Component{
 
     this.state = {
       carouselImages: [
-        contentCarouselImage,
-        contentCarouselImage,
         contentCarouselImage
       ],
       currentIndex: 0,
@@ -23,21 +20,14 @@ class Content extends Component{
     }
   }
 
-  render() {
 
-    // let carouselImages = this.state.carouselImages.map((image, i)=>{
-    //   <CarouselImage key={i} image={image}/>
-    // })
-    // <div className="carousel-wrapper">
-    //   <CarouselImage image={this.state.carouselImages[0]}/>
-    // </div>
+  render() {
 
     return (
       <div className="content">
         <div className="content__carousel">
 
-          <img src={contentCarouselImage} alt="Desktop 1280px 3x4 Small"/>
-
+        <img src={contentCarouselImage} alt="Desktop 1280px 3x4 Small"/>
 
           <div className="content__carousel__description">
             <p>
