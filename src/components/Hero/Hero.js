@@ -27,8 +27,12 @@ class Hero extends Component{
   }
 
   onArrowClick = (event) => {
+    const heroCompHeight = document.querySelector(".hero").clientHeight
+
     // Scroll to top of next (content) section on down arrow button click
-    let scrollAmount = 770 - window.pageYOffset
+    // Falls short by 46 pixels?
+    let scrollAmount = heroCompHeight - window.pageYOffset + 46
+
 
     easyScroll({
       'scrollableDomEle': window,
@@ -37,6 +41,8 @@ class Hero extends Component{
       'easingPreset': 'easeInQuad',
       'scrollAmount': scrollAmount
     });
+
+
   }
 
   onRadioChange = (event) => {this.setState({currentColor: event.target.value})}

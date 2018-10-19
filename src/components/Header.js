@@ -18,8 +18,9 @@ class Header extends Component{
   componentDidMount() { window.addEventListener('scroll', this.onScroll) };
 
   onScroll = (event) =>{
+    const heroCompHeight = document.querySelector(".hero").clientHeight
     // If y position passes hero, hide navigation
-    window.pageYOffset>document.querySelector(".hero").clientHeight ? this.setState({hideNav:true}) : this.setState({hideNav:false})
+    window.pageYOffset>heroCompHeight ? this.setState({hideNav:true}) : this.setState({hideNav:false})
     // On scroll, fade navigation
     window.pageYOffset>0 ? this.setState({fadeNav: true}) : this.setState({fadeNav: false})
   }
