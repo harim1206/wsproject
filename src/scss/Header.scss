@@ -43,6 +43,8 @@
   font-family: $font-medium;
   font-size: $logo-size;
   color: $nav-color;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .header__button{
@@ -50,6 +52,9 @@
   font-size: $nav__button-size;
   color: $nav-color;
   line-height: 24px;
+  cursor: pointer;
+  text-decoration: none;
+
 
 }
 
