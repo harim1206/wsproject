@@ -29,9 +29,15 @@
   position: absolute;
   padding: 28% 0 0 60px;
   font-family: $font-medium;
-  font-size: $title-size;
+  font-size: $description-size;
+
   color: #ffffff;
   z-index: 150;
+
+
+  @media (min-width: #{$desktop-min-width}){
+    font-size: $title-size;
+  }
 
 }
 
