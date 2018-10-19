@@ -1,4 +1,5 @@
 ##Instructions
-In command line,
+In command line:
 >npm install
+
 >npm start
