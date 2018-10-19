@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import contentStaticImage from '../assets/03_1280(4x3Large).jpg'
 import contentCarouselImage from '../assets/02_1280(3x4Small).jpg'
 
+import Slider from './Slider'
+
 import '../scss/Content.scss'
 
 class Content extends Component{
@@ -24,7 +26,10 @@ class Content extends Component{
     return (
       <div className="content">
         <div className="content__carousel">
-          <img src={contentCarouselImage} alt="Desktop 1280px 3x4 Small"/>
+          <div className="content__carousel__wrapper">
+            
+            <Slider carouselImages={this.state.carouselImages}/>
+          </div>
 
           <div className="content__carousel__description">
             <p>
