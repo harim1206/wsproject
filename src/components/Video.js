@@ -12,15 +12,29 @@ class Video extends Component{
     this.state={
       overlay: true
     }
+
+    this.onScroll = this.onScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.onScroll)
   }
 
   onOverlayClick = () =>{
-    console.log('Hello')
-    this.setState({overlay: false},()=>console.log(this.state))
+    this.setState({overlay: false})
   }
 
   onPause = () => {
-    this.setState({overlay: true},()=>console.log(this.state))
+    this.setState({overlay: true})
+  }
+
+  onScroll = (event) =>{
+    const heroDivHeight = document.querySelector(".hero").clientHeight
+    const contentDivHeight = document.querySelector(".content").clientHeight
+    const videoWindowYPosition = heroDivHeight + contentDivHeight
+
+    if(videoWindowYPosition - window.pageYOffset > window.innerHeight)
+      this.setState({overlay:true})
   }
 
   render() {

@@ -18,7 +18,6 @@ class Header extends Component{
   };
 
   onScroll = (event) =>{
-    console.log('window.pageYOffset: ', window.pageYOffset)
 
     // if y position passes hero, hide navigation
     window.pageYOffset>635 ? this.setState({hideNav:true}) : this.setState({hideNav:false})
