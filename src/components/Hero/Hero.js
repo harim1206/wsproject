@@ -44,7 +44,7 @@ class Hero extends Component{
   render() {
     let mobileHeroImg
     let desktopHeroImg
-    
+
     if(this.state.currentColor==="white"){
       mobileHeroImg = MobileHeroImgWhite
       desktopHeroImg = DesktopHeroImgWhite
@@ -62,7 +62,7 @@ class Hero extends Component{
           <picture className="hero__image">
             <source media="(max-width: 500px)" srcSet={mobileHeroImg}/>
             <source media="(min-width: 501px)" srcSet={desktopHeroImg}/>
-            <img src={DesktopHeroImgWhite} alt="Desktop 1280px 16x9 Hero"/>
+            <img src={desktopHeroImg} alt="Desktop 1280px 16x9 Hero"/>
           </picture>
         </div>
 
