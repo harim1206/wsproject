@@ -34,11 +34,15 @@
 
 .hero__arrow{
   position: absolute;
-  bottom: 60px;
+  bottom: 175px;
   right: 60px;
   cursor: pointer;
 
   i{
     color: white;
+  }
+
+  @media (min-width: #{$desktop-min-width}){
+    bottom: 60px;
   }
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import '../../scss/ProductDetailRadio.scss'
 
 const ProductDetailRadio = (props) => (
- <div className="product-detail-checkbox">
+ <div className="product-detail-radio">
+   <div>Select Color</div><br/>
   <input type="radio" id="white"
          name="color" value="white"
          onChange = {props.onRadioChange} />
@@ -18,7 +19,7 @@ const ProductDetailRadio = (props) => (
   <input type="radio" id="gold"
          name="color" value="gold"
          onChange = {props.onRadioChange} />
-  <label htmlFor="gold">Gold</label>
+  <label htmlFor="gold">Rose Gold</label>
  </div>
 );
 

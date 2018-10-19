@@ -14,8 +14,7 @@ const ProductDetail = (props) =>(
       <div className="product-detail__description">Custom cut quart rock crystal hoop earrings with solid gold or silver end caps and hinge closure. Available in White, Yellow or Rose 14k Gold and Silver. Sold as pair.</div>
       <br/><br/>
 
-      <div>Select Color</div>
-      <br/>
+      
 
       <ProductDetailRadio onRadioChange={props.onRadioChange}/>
       <br/><br/>

@@ -1,3 +1,15 @@
+@import "./_variables";
+
+.product-detail-radio{
+  position: absolute;
+  bottom: 100px;
+
+  @media (min-width: #{$desktop-min-width}){
+    position: static;
+  }
+
+}
+
 input{
   margin-right: 10px;
 }

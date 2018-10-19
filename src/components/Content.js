@@ -27,7 +27,6 @@ class Content extends Component{
       <div className="content">
         <div className="content__carousel">
           <div className="content__carousel__wrapper">
-            
             <Slider carouselImages={this.state.carouselImages}/>
           </div>
 
