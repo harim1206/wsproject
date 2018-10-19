@@ -8,8 +8,8 @@
 
   @media (min-width: #{$desktop-min-width}){
     display: grid;
-    // Split columns 8/4
-    grid-template-columns: 8fr 4fr;
+    // Split columns 6/4
+    grid-template-columns: 6fr 6fr;
     padding: 60px;
   }
 
