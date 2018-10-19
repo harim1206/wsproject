@@ -1,9 +1,9 @@
 @import "./_variables";
 
 .product-detail-button{
+  display: block;
   position: absolute;
   bottom: 0;
-  display: block;
   width: 100%;
   padding: 22px 50px;
   margin-left: -30px;
@@ -12,46 +12,19 @@
   text-decoration: none;
   background: $button-background;
   color: $button-color;
-  font-size: $button-size;
   font-family: $font;
+  font-size: $button-size;
   cursor: pointer;
 
   @media (min-width: #{$desktop-min-width}){
     width: auto;
     position: static;
     margin: 0;
-
-
   }
 
 }
 
 .product-detail-button:hover,
 .product-detail-button:focus {
-    background: $button-background-hover;
+  background: $button-background-hover;
 }
-
-
-// .atc-button--mobile{
-//   display: block;
-//   position: absolute;
-//   width: 100%;
-//   bottom: -60px;
-//
-// }
-
-// .atc-button--desktop{
-//   display: none;
-// }
-//
-// @media (min-width: #{$desktop-min-width}){
-//   .atc-button--mobile{
-//     display: none;
-//   }
-//
-//   .atc-button--desktop{
-//     display: inline-block;
-//   }
-//
-//
-// }

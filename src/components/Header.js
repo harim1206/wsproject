@@ -28,8 +28,6 @@ class Header extends Component{
     let divStyle = {backgroundColor: this.state.fadeNav ? "rgba(226, 216, 206, 0.8)":"transparent"};
     let headerClass = this.state.hideNav ? "header header-disappear":"header"
 
-
-
     return (
       <div className={headerClass} style={divStyle}>
         <div className = "header__logo header--desktop">josh</div>

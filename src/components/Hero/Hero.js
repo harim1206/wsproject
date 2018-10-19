@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import '../../scss/Hero.scss'
-import '../../scss/ProductDetail.scss'
 
-import ProductDetail from './ProductDetail'
+// Import images
 import DesktopHeroImgWhite from '../../assets/01_1280(16x9Hero).jpg'
 import MobileHeroImgWhite from '../../assets/Mobile_16x9-Hero.jpg'
 import DesktopHeroImgYellow from '../../assets/desktopHeroImgYellowSample.jpg'
@@ -10,7 +8,11 @@ import MobileHeroImgYellow from '../../assets/mobileHeroImgYellowSample.jpg'
 import DesktopHeroImgGold from '../../assets/desktopHeroImgGoldSample.jpg'
 import MobileHeroImgGold from '../../assets/mobileHeroImgGoldSample.jpg'
 
-// for smooth scrollTo animation
+import ProductDetail from './ProductDetail'
+import '../../scss/Hero.scss'
+import '../../scss/ProductDetail.scss'
+
+// NPM library for smooth scrollTo animation
 import easyScroll from 'easy-scroll';
 
 class Hero extends Component{
@@ -19,13 +21,13 @@ class Hero extends Component{
     super();
 
     this.state={
-      // desktopHeroImg: DesktopHeroImgWhite,
-      // mobileHeroImg: MobileHeroImgWhite
+      // Currently selected color
       currentColor: "white"
     }
   }
 
   onArrowClick = (event) => {
+    // Scroll to top of next (content) section on down arrow button click
     let scrollAmount = 770 - window.pageYOffset
 
     easyScroll({
@@ -42,6 +44,7 @@ class Hero extends Component{
   render() {
     let mobileHeroImg
     let desktopHeroImg
+    
     if(this.state.currentColor==="white"){
       mobileHeroImg = MobileHeroImgWhite
       desktopHeroImg = DesktopHeroImgWhite

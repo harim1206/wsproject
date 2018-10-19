@@ -1,14 +1,14 @@
 @import "./variables";
 
 .footer {
-  width: 100vw;
-  padding-bottom: 30px;
-
   background-color: $background-color;
   font-family: $font-medium;
+  width: 100%;
+  padding-bottom: 30px;
 
   @media (min-width: #{$desktop-min-width}){
     display: grid;
+    // Split columns 8/4
     grid-template-columns: 8fr 4fr;
     padding: 60px;
   }

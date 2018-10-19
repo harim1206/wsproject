@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../scss/ProductDetailCheckbox.scss'
+import '../../scss/ProductDetailRadio.scss'
 
-const ProductDetailCheckbox = (props) => (
+const ProductDetailRadio = (props) => (
  <div className="product-detail-checkbox">
   <input type="radio" id="white"
          name="color" value="white"
@@ -22,4 +22,4 @@ const ProductDetailCheckbox = (props) => (
  </div>
 );
 
-export default ProductDetailCheckbox;
+export default ProductDetailRadio;

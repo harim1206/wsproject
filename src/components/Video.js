@@ -16,18 +16,15 @@ class Video extends Component{
     this.onScroll = this.onScroll.bind(this);
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.onScroll)
-  }
+  componentDidMount() {window.addEventListener('scroll', this.onScroll)}
 
-  onOverlayClick = () =>{
-    this.setState({overlay: false})
-  }
+  // On video play, remove overlay
+  onOverlayClick = () => {this.setState({overlay: false})}
 
-  onPause = () => {
-    this.setState({overlay: true})
-  }
+  // On video pause, add overlay
+  onPause = () => {this.setState({overlay: true})}
 
+  // Add overlay when video is scrolled offscreen
   onScroll = (event) =>{
     const heroDivHeight = document.querySelector(".hero").clientHeight
     const contentDivHeight = document.querySelector(".content").clientHeight
@@ -46,12 +43,12 @@ class Video extends Component{
         <div
           className={overlayClass}
           onClick={this.onOverlayClick} >
-          <img src={VideoOverlay}/>
+          <img src={VideoOverlay} alt="Video Overlay"/>
         </div>
 
         <ReactPlayer
           className="react-player"
-          url='https://youtu.be/k7x7jPEKH70'
+          url='https://youtu.be/uYuJfySFHOg'
           width='100%'
           height='100%'
           playing={toggleVideo}
