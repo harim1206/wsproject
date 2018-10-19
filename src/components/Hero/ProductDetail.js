@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 
 import ProductDetailCheckbox from './ProductDetailCheckbox'
 import ProductDetailButton from './ProductDetailButton'
-import '../css/ProductDetail.scss'
-// import '../css/ATCButton.scss'
-
+import '../../scss/ProductDetail.scss'
 
 class ProductDetail extends Component{
 

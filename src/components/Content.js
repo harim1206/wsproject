@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import contentStaticImage from '../assets/03_1280(4x3Large).jpg'
 import contentCarouselImage from '../assets/02_1280(3x4Small).jpg'
 
-import '../css/Content.scss'
+import '../scss/Content.scss'
 
 class Content extends Component{
 

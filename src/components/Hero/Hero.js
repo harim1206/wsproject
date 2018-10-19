@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import '../css/Hero.scss'
-import '../css/ProductDetail.scss'
+import '../../scss/Hero.scss'
+import '../../scss/ProductDetail.scss'
 
 import ProductDetail from './ProductDetail'
-import DesktopHeroImgWhite from '../assets/01_1280(16x9Hero).jpg'
-import MobileHeroImgWhite from '../assets/Mobile_16x9-Hero.jpg'
-import DesktopHeroImgYellow from '../assets/desktopHeroImgYellowSample.jpg'
-import MobileHeroImgYellow from '../assets/mobileHeroImgYellowSample.jpg'
-import DesktopHeroImgGold from '../assets/desktopHeroImgGoldSample.jpg'
-import MobileHeroImgGold from '../assets/mobileHeroImgGoldSample.jpg'
+import DesktopHeroImgWhite from '../../assets/01_1280(16x9Hero).jpg'
+import MobileHeroImgWhite from '../../assets/Mobile_16x9-Hero.jpg'
+import DesktopHeroImgYellow from '../../assets/desktopHeroImgYellowSample.jpg'
+import MobileHeroImgYellow from '../../assets/mobileHeroImgYellowSample.jpg'
+import DesktopHeroImgGold from '../../assets/desktopHeroImgGoldSample.jpg'
+import MobileHeroImgGold from '../../assets/mobileHeroImgGoldSample.jpg'
 
 // for smooth scrollTo animation
 import easyScroll from 'easy-scroll';

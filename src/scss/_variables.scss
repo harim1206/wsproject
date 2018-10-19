@@ -1,3 +1,4 @@
+// fonts
 $font: 'AkzidenzGrotesk', sans-serif;
 $font-medium: 'AkzidenzGroteskMedium', sans-serif;
 
@@ -6,12 +7,12 @@ $font-medium: 'AkzidenzGroteskMedium', sans-serif;
     src: url("../fonts/AkzidenzGrotesk-Extended.otf");
 }
 
-
 @font-face {
     font-family: "AkzidenzGroteskMedium";
     src: url("../fonts/AkzidenzGrotesk-MediumExtended.otf");
 }
 
+// Global
 $background-color: #E2D8CE;
 
 //Media Queries

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
 
 import VideoOverlay from "../assets/04_1280(16x9Video).jpg"
-import '../css/Video.scss'
+import '../scss/Video.scss'
 
 class Video extends Component{
 

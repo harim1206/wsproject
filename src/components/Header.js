@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/Header.scss'
+import '../scss/Header.scss'
 
 class Header extends Component{
 
@@ -7,22 +7,21 @@ class Header extends Component{
     super();
 
     this.state={
+      // Navigation is faded
       fadeNav: false,
+      // Navigation is hidden
       hideNav: false
     }
     this.onScroll = this.onScroll.bind(this);
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.onScroll);
-  };
+  componentDidMount() { window.addEventListener('scroll', this.onScroll) };
 
   onScroll = (event) =>{
-
-    // if y position passes hero, hide navigation
+    // If y position passes hero, hide navigation
     window.pageYOffset>635 ? this.setState({hideNav:true}) : this.setState({hideNav:false})
+    // On scroll, fade navigation
     window.pageYOffset>0 ? this.setState({fadeNav: true}) : this.setState({fadeNav: false})
-
   }
 
   render() {

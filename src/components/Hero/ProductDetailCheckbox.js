@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/ProductDetailCheckbox.scss'
+import '../../scss/ProductDetailCheckbox.scss'
 
 const ProductDetailCheckbox = (props) => (
  <div className="product-detail-checkbox">

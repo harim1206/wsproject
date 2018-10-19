@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/ProductDetailButton.scss'
+import '../../scss/ProductDetailButton.scss'
 
 const ProductDetailButton = (props) => (
  <button className="product-detail-button" onClick={props.onAddToCartClick}>
