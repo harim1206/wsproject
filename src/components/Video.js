@@ -43,6 +43,7 @@ class Video extends Component{
         <div
           className={overlayClass}
           onClick={this.onOverlayClick} >
+          <div className="video-overlay-text">play video</div>
           <img src={VideoOverlay} alt="Video Overlay"/>
         </div>
 

@@ -40,16 +40,17 @@
 
 
 .header__logo{
-  font-size: $logo-size;
   font-family: $font-medium;
+  font-size: $logo-size;
   color: $nav-color;
 }
 
 .header__button{
+  font-family: $font-medium;
   font-size: $nav__button-size;
   color: $nav-color;
   line-height: 24px;
-  padding-left: 20px;
+
 }
 
 .header--left{

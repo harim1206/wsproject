@@ -25,6 +25,16 @@
   }
 }
 
+.video-overlay-text{
+  position: absolute;
+  padding: 28% 0 0 60px;
+  font-family: $font-medium;
+  font-size: $title-size;
+  color: #ffffff;
+  z-index: 150;
+
+}
+
 .video-overlay-hidden{
   // Video overlay fade animation
   visibility: hidden;
