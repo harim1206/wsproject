@@ -1,32 +1,33 @@
 @import "./_variables";
 
-.atc-button{
+.product-detail-button{
   position: absolute;
   bottom: 0;
-  border: none;
+  display: block;
+  width: 100%;
   padding: 22px 50px;
-  margin: 0;
+  margin-left: -30px;
+
+  border: none;
   text-decoration: none;
   background: $button-background;
   color: $button-color;
   font-size: $button-size;
   font-family: $font;
   cursor: pointer;
-  display: block;
-  width: 100%;
 
   @media (min-width: #{$desktop-min-width}){
     width: auto;
-    margin-left: 60px;
     position: static;
-    
+    margin: 0;
+
 
   }
 
 }
 
-.atc-button:hover,
-.atc-button:focus {
+.product-detail-button:hover,
+.product-detail-button:focus {
     background: $button-background-hover;
 }
 

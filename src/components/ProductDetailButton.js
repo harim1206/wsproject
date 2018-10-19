@@ -1,8 +1,8 @@
 import React from 'react';
 import '../css/ProductDetailButton.scss'
 
-const ProductDetailButton = () => (
- <button className="product-detail-button">
+const ProductDetailButton = (props) => (
+ <button className="product-detail-button" onClick={props.onAddToCartClick}>
   add ( 1 pair ) to bag
 
  </button>

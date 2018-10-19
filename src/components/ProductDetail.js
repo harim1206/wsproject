@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 import ProductDetailCheckbox from './ProductDetailCheckbox'
+import ProductDetailButton from './ProductDetailButton'
 import '../css/ProductDetail.scss'
-import '../css/ATCButton.scss'
+// import '../css/ATCButton.scss'
 
 
 class ProductDetail extends Component{
@@ -25,17 +26,18 @@ class ProductDetail extends Component{
           <div>Select Color</div>
           <br/>
 
-          <ProductDetailCheckbox/>
+          <ProductDetailCheckbox onRadioChange={this.props.onRadioChange}/>
           <br/><br/>
+          <ProductDetailButton onAddToCartClick={this.props.onAddToCartClick}/>
         </div>
-        <button className="atc-button atc-button--desktop">
-          add ( 1 pair ) to bag
-        </button>
       </div>
     );
   }
 
 }
+// <button className="atc-button atc-button--desktop">
+// add ( 1 pair ) to bag
+// </button>
 
 
 export default ProductDetail

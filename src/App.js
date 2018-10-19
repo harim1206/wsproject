@@ -9,11 +9,30 @@ import Video from './components/Video'
 import Footer from './components/Footer'
 
 class App extends Component {
+
+  constructor(){
+    super()
+
+    this.state = {
+        cartItemCount: 0
+
+    }
+  }
+
+  onAddToCartClick = () => {
+    this.setState({cartItemCount: this.state.cartItemCount+1},()=>console.log("this.state: ",this.state))
+  }
+
+
   render() {
     return (
       <div className="App">
-        <Header/>
-        <Hero/>
+        <Header
+          cartItemCount={this.state.cartItemCount}
+        />
+        <Hero
+          onAddToCartClick={this.onAddToCartClick}
+        />
         <Content/>
         <Video/>
         <Footer/>
